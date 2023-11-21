@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: testbash
+spec:
+ containers:
+   - name: bash
+     image: bash
+     command:
+       - tail
+       - -f
+       - /dev/null
